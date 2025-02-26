@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{html,js,php}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+      }
+    },
   },
   plugins: [],
 };

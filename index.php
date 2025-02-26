@@ -5,60 +5,26 @@ include "db.php";
 
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth ">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="src/style/output.css" />
     <link rel="stylesheet" href="src/style/style.css" />
   </head>
   <body>
-    <nav
-      class="w-full bg-gray-900 h-20 p-3 items-center flex flex-row justify-between fixed top-0"
-    >
-      <h2 class="font-mono font-bold text-2xl text-white float-left ml-14">
-        PORTO<span class="text-[#31E1F7]">FOLIO</span>
-      </h2>
-      <ul
-        class="text-white flex flex-row items-center text-xl float-right font-semibold"
-      >
-        <li><a
-          href="#home"
-          class="list mr-8 hover:text-[#31E1F7] transition duration-700"
-          >Home</a
-        >
-      </li>
-      <li>
-        <a
-          href="#about"
-          class="list mr-8 hover:text-[#31E1F7] transition duration-700"
-          >About me</a
-        >
-      </li>
-      <li>
-        <a
-          href="#eskil"
-          class="list mr-2 hover:text-[#31E1F7] transition duration-700"
-          >Education
-        </a>
-      </li>
-        &
-        <li>
-          <a class="list mr-8 ml-2 hover:text-[#31E1F7]" href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#porto" class="list mr-8 hover:text-[#31E1F7] transition duration-700"
-            >Portofolio</a
-          >
-        </li>
-        <li>
-          <a href="#contact" class="list mr-8 hover:text-[#31E1F7] transition duration-700"
-            >Contact</a
-          >
-        </li>
-      </ul>
-    </nav>
+  <nav class="w-full bg-gray-900 h-30 p-3 items-center flex flex-col md:flex-row justify-between fixed">
+  <h2 class="font-mono font-bold text-2xl text-white ml-4">
+    PORTO<span class="text-[#31E1F7]">FOLIO</span>
+  </h2>
+  <ul class="text-white flex flex-row justify-center w-full gap-4 items-center text-[12px] sm:text-[1.2rem]  font-semibold">
+    <li><a href="#home" class=" list sm:mr-8 hover:text-[#31E1F7] transition duration-700">Home</a></li>
+    <li><a href="#about" class="list sm:mr-8 hover:text-[#31E1F7] transition duration-700">About</a></li>
+    <li><a href="#eskil" class="list sm:mr-8 hover:text-[#31E1F7] transition duration-700">Education</a></li>
+    <li><a href="#skills" class="list sm:mr-8 hover:text-[#31E1F7]">Skills</a></li>
+    <li><a href="#porto" class="list sm:mr-8 hover:text-[#31E1F7] transition duration-700">Portofolio</a></li>
+    <li><a href="#contact" class="list sm:mr-8 hover:text-[#31E1F7] transition duration-700">Contact</a></li>
+  </ul>
+</nav>
     <!-- Home page -->
 
     <?php include "src/components/home.html"; ?>
@@ -80,8 +46,8 @@ include "db.php";
     <?php include "src/components/portofolio.html"; ?>
 
 
-    <section class="h-screen w-full" id="contact">
-      <div class="w-full h-full p-28">
+    <section class="h-screen w-full scroll-mt-50" id="contact">
+      <div class="w-full h-full p-4 sm:p-28">
         <h2 class="text-4xl font-bold text-center text-[#31E1F7] mb-8">
           Contact
         </h2>
@@ -248,7 +214,7 @@ include "db.php";
         </div>
       </div>
     </section>
-
+    <?php include "src/components/footer.html"; ?>
     <script src="script.js"></script>
   </body>
 </html>
