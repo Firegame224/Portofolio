@@ -203,7 +203,7 @@ include "db.php";
                   </svg>
                 </div>
                 <div>
-                  <h4 class="text-lg font-semibold text-gray-200">Address</h4>
+                  <h4 class="text-lg font-semibold text-gray-200">Alamat</h4>
                   <p class="text-gray-400">
                     Tiparkidul, Ajibarang, Banyumas, Jawa Tengah
                   </p>
